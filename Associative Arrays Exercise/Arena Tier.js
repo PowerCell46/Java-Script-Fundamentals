@@ -80,7 +80,7 @@ function arenaTier(array) {
                 currentSkillValueEncountersArray.push(index);
             }
         }
-        if (currentSkillValueEncountersArray.length === 1) { // ако се total skill-а се среша само 1 път
+        if (currentSkillValueEncountersArray.length === 1) { // ако се total skill-а се среща само 1 път
             let currentGladiator = Object.keys(finalGladiatorToPointsObj)[currentSkillValueEncountersArray];
             totalSkillValuesOrdered.shift();
             finalPrintStringOutput += "" + currentGladiator + ": " + currentGladiatorTotalSkillValue + " skill"
