@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/PowerCell46/Java-Script-Fundamentals/blob/main/Programming%20Fundamentals%20with%20JavaScript%20-%20January%202023%20-%20Peter%20Gerdzhikov%20Certificate.jpeg" alt="JS-Fund-Jan-2023">
+  <img src="https://github.com/PowerCell46/Java-Script-Fundamentals/blob/main/Programming%20Fundamentals%20with%20JavaScript%20-%20January%202023%20-%20Peter%20Gerdzhikov%20-%20Certificate.jpeg" alt="JS-Fund-Jan-2023">
 </div>
 
 ---
