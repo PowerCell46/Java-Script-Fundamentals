@@ -1,7 +1,7 @@
 function coffeeTask([coffeearr, numberOfCommands, ...data]) {
     coffeearr = coffeearr.split(" ");
 
-    for (let i = 0; i < numberOfCommands; i++) {
+    for (let i = 0; i < Number(numberOfCommands); i++) {
         const currentCommand = data[i].split(" ")[0];
 
         if (currentCommand === "Include") {
