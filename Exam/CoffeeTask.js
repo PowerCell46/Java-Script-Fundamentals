@@ -1,33 +1,34 @@
-function coffeeTask(coffeearr, numberOfCommands, ...data) {
+function coffeeTask([coffeearr, numberOfCommands, ...data]) {
     coffeearr = coffeearr.split(" ");
 
     for (let i = 0; i < numberOfCommands; i++) {
-        const command = data[i].split(" ")[0];
+        const currentCommand = data[i].split(" ")[0];
 
-        if (command === "Include") {
+        if (currentCommand === "Include") {
             coffeearr.push(data[i].split(" ")[1]);
         
-        } else if (command === "Remove") {
-            const removingPosition = data[i].split(" ")[1];
+        } else if (currentCommand === "Remove") {
+            const removingSide = data[i].split(" ")[1];
+
             let numberOfRemovals = Number(data[i].split(" ")[2]);
             if (numberOfRemovals > coffeearr.length) {
                 continue;
             }
 
-            if (removingPosition === "first") {
+            if (removingSide === "first") {
                 while (numberOfRemovals > 0) {
                     coffeearr.shift();
                     numberOfRemovals--;
                 }
         
-            } else if (removingPosition === "last") {
+            } else if (removingSide === "last") {
                 while (numberOfRemovals > 0) {
                     coffeearr.pop();
                     numberOfRemovals--;
                 }
             }
         
-        } else if (command === "Prefer") {
+        } else if (currentCommand === "Prefer") {
             const firstIndex = Number(data[i].split(" ")[1]);
             const secondIndex = Number(data[i].split(" ")[2]);
             
@@ -39,7 +40,7 @@ function coffeeTask(coffeearr, numberOfCommands, ...data) {
                 coffeearr[firstIndex] = coffeearr[secondIndex];
                 coffeearr[secondIndex] = temp;
             }
-        } else if (command === "Reverse") {
+        } else if (currentCommand === "Reverse") {
             coffeearr.reverse();
         }
     }
